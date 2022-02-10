@@ -1,0 +1,56 @@
+ \documentclass[a4paper, 12pt]{article}
+ \begin{document}
+ 
+ 
+
+ \section{Naslov sekcije}
+Novu sekciju počinješ sa komandom \backslash section{}
+
+\subsection{Naslov podsekcije}
+ Podsekciju počinješ sa \backslash subsection{}
+ 
+\subsubsection{Naslov pod-podsekcije}
+ Naredni nivo podsekcije počinješ sa \backslash subsubsection{}
+ 
+ 
+ - U dokumentima klase report ili book imamo i odeljke višeg nivoa , kao što je:
+ poglavlje \backslash chapter{} i dio: \backslash part{}
+ 
+ \chapter{Poglavlje (glava) 1}
+ \part{Dio II}
+ 
+ 
+ 
+ - Sve navedene komande imaju svoju verziju sa zvjezdicom npr.
+ 
+ \section*{Zaključak}
+ 
+ U tom slučaju se ne vrši numeracija definisanog odeljka dokumenta (ne računa stranice, te stranice koje su, sa zvezdicom..)
+ 
+ 
+ \chapter[Tekst]{Tekst -- unos, korekcija i ispis}
+ 
+ - Sadrzaj u dokument umećemo naredbom
+ \tableofcontents
+
+
+- Sadrzaj se moze uneti na proizvoljno mesto u dokumentu, ali obično je on na početku ili na kraj dokumenta
+
+- Bilo koji numerisani dio dokumenta, mozemo oznaciti komandom  
+\label{ImeOznake}
+Argument ove naredbe je ime oznake i treba biti jedinstveno na nivou dokumenta 
+
+- Pozivanje na redni broj oznake ostvarujemo komandom  \ref{ImeOznake}
+Znaci, koji je onaj redni broj te oznake, 2.1, 2.1.3 itd..
+
+- Stranicu na kojoj smo postavili oznaku dobijamo komandom \pageref{ImeOznake}
+
+-Obe komande, \ref i \pageref kao argument uzimaju ima koje smo dodelili numerisanom objaktu komandom \label
+
+
+
+ 
+ 
+ 
+ 
+ \end{document}

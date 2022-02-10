@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[serbian]{babel}
+\begin{document}
+\title{Vje\v{z}ba broj 9}
+\author{Igor Lerinc}
+\date{10. decembar 2021}
+\maketitle
+
+\section{Prva sekcija}
+Cilj ove vje\v{z}be je da napravite pdf dokument koji izgleda kao ovaj. Prilikom izrade koristite slajdove sa predavanja koje mo\v{z}ete prona\’{c}i na sajtu fakulteta: textit{http://www.ucg.ac.me/etf}.
+\Large{Nemojte poku\v{s}avati da napravite cio dokument odjednom, ve\’{c} pravite dio po dio}
+
+
+\section{\Large{Parametri - Veli\v{c}ina slova, kodni raspored, naslov, autor, datum }}
+\label{par}
+
+Za izradu ovog dokumenta kori\v{s}\’{c}ena je klasa textit{article}, sa dodatnim opcijama: font veli\v{c}ine textbf{12pt}; veli\v{c}ina papira textbf{A4}; kodni raspored textbf{cp1250}; jezik dokumenta textbf{serbian} . . . Naslov dokumenta je large{Vje\v{z}ba broj 9}. Obratite pa\v{z}nju na veli\’{c}inu slova u prethodnoj re\v{c}enici. Ispod naslova je prikazan autor. Tu upi\v{s}ite svoje ime i prezime. Za datum koristite dana\v{s}nji datum.
+
+\subsection{Detalj}
+Obratite pa\v{z}nju na sadr\v{z}aj \footnote{Nalazi se na kraju dokumenta i u njemu su izlistane sve sekcije i podsekcije.}, koji se nalazi na kraju dokumenta. Uo\v{c}ite kako je ova sekcija prikazana u njemu. Ne zaboravite da postavite Futnote na rije\v{c} sadr\v{z}aj u prvoj re\v{c}enici ovog pasusa.
+\bigskip
+
+Prethodni pasus je od ove re\v{c}enice odvojen naredbom \textbackslash bigskip.
+
+\section*{Nenumerisana sekcija}
+Ovo je jedna nenumerisana sekcija. Ona se ne nalazi u sar\v{z}aju. Ukoliko ne znate kako da dodate ovu sekciju, pomo\’{c} potra\v{z}ite na slajdovima sa predavanja.
+
+
+\section{Tre\’{c}a sekcija}
+
+U ovoj sekciji se ne nalaze informacije o dokumentu kao u sekciji 2 koja
+se nalazi na strani 1 ovog dokumenta. Brojevi u ovoj re\v{c}enici se moraju dobiti kori\v{s}\’{c}enjem naredbi \ref{par} i \pageref{par} .
+Da biste koristili ove naredbe morate označiti sekciju Parametri - Veli\v{c}ina slova, kodni raspored, naslov, autor, datum naredbom \textbackslash label .
+\tiny{Ne zaboravite dokument procesirati dva puta komandom: \textbf{pdflatex}!}
+
+\tableofcontents 
+
+
+
+
+
+
+
+
+
+
+
+ \end{document}
+ 

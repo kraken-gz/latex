@@ -1,0 +1,41 @@
+ \documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[serbian]{babel}
+
+\begin{document}
+\title{Vježba broj 9}
+\author{Igor Lerinc}
+\date{10. decembar 2021}
+\maketitle
+\section{Prva sekcija}
+Cilj ove vježbe je da napravite pdf dokument koji izgleda kao ovaj. Prilikom izrade koristite slajdove sa predavanja koje možete pronaći na sajtu fakulteta: {\textit{http://www.ucg.ac.me/etf}.}
+{\large{\textbf{Nemojte pokušavati da napravite cio dokument odjednom, već  pravite dio po dio}}}
+
+\section{{\large{Parametri - Veličina slova, kodni raspored, naslov, autor, datum }}}
+\label{par}
+
+Za izradu ovog dokumenta korišćena je klasa {\textit{article}}, sa dodatnim opcijama: font veličine {\textbf{12pt}}; veličina papira {\textbf{A4}}; kodni raspored {\textbf{cp1250}}; jezik dokumenta {\textbf{serbian}} . . . Naslov dokumenta je {\Large{Vježba broj 9}}. Obratite pažnju na veličinu slova u prethodnoj rečenici. Ispod naslova je prikazan autor. Tu upišite svoje ime i prezime. Za datum koristite današnji datum.
+
+\subsection{Detalj}
+Obratite pažnju na sadržaj \footnote{Nalazi se na kraju dokumenta i u njemu su izlistane sve sekcije i podsekcije.}, koji se nalazi na kraju dokumenta. Uočite kako je ova sekcija prikazana u njemu. Ne zaboravite da postavite Futnote na riječ sadžaj u prvoj rečenici ovog pasusa.
+\bigskip
+
+Prethodni pasus je od ove rečenice odvojen naredbom \textbackslash bigskip.
+
+\section*{Nenumerisana sekcija}
+Ovo je jedna nenumerisana sekcija. Ona se ne nalazi u saržaju. Ukoliko ne znate kako da dodate ovu sekciju, pomoć potražite na slajdovima sa predavanja.
+
+
+\section{Treća sekcija}
+
+U ovoj sekciji se ne nalaze informacije o dokumentu kao u sekciji \ref{par} koja se nalazi na strani \pageref{par} ovog dokumenta. Brojevi u ovoj rečenici se moraju dobiti korišćenjem naredbi \textbackslash ref i \textbackslash pageref .
+Da biste koristili ove naredbe morate označiti sekciju Parametri - Veličina slova, kodni raspored, naslov, autor, datum naredbom \textbackslash label .
+
+
+\tiny{Ne zaboravite dokument procesirati dva puta komandom: {\textbf{pdflatex}}!}
+
+\bigskip
+\tableofcontents 
+
+
+ \end{document}
